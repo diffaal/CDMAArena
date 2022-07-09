@@ -1,0 +1,41 @@
+<%- include('../partials/header'); %>
+
+<!-- CONTENT =============================-->
+<section class="item content">
+    <div class="container toparea">
+        <div class="underlined-title">
+            <div class="editContent">
+                <h1 class="text-center latestitems">ALL SMARTPHONES</h1>
+            </div>
+            <div class="wow-hr type_short">
+                <span class="wow-hr-h">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                </span>
+            </div>
+        </div>
+        <div class="row">
+            <% model.forEach(function(smartphone) { %>
+                <div class="col-md-4">
+                    <div class="productbox">
+                        <div class="fadeshop">
+                            <div class="captionshop text-center" style="display: none;">
+                                <br><br><br><br>
+                                <p>
+                                    <a href="/details/<%= smartphone.id_produk %>" class="learn-more detailslearn"><i class="fa fa-link"></i> Details</a>
+                                </p>
+                            </div>
+                            <span class="maxproduct"><img src="images/<%= smartphone.gambar %>" alt=""></span>
+                        </div>
+                        <div class="product-details">
+                            <h1><%= smartphone.tipe %></h1>
+                        </div>
+                    </div>
+                </div>
+            <% }); %>
+        </div>
+    </div>
+</section>
+
+<%- include('../partials/footer'); %>

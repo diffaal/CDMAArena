@@ -1,0 +1,101 @@
+<%- include('../partials/header'); %>
+
+<section class="item content">
+    <div class="container toparea">
+        
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <div class="done">
+                    <div class="alert alert-success">
+                        <button type="button" class="close" data-dismiss="alert">×</button>
+                        Your message has been sent. Thank you!
+                    </div>
+                </div>
+                <form method="post" action="/create" id="contactform" enctype="multipart/form-data">
+                    <div class="form">
+                        <div class="underlined-title">
+                            <div class="editContent">
+                                <h1 class="text-center latestitems">Add Smartphone</h1>
+                            </div>
+                            <div class="wow-hr type_short">
+                                <span class="wow-hr-h">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <label for="id">ID Produk</label>
+                        <input type="text" name="id" placeholder="ID Produk *">
+                        <label for="tipe">Tipe</label>
+                        <input type="text" name="tipe" placeholder="Tipe Produk *">
+                        <label for="merk">Merk</label>
+                        <input type="text" name="merk" placeholder="Merk Produk *">
+                        <label for="waktu1">Waktu Pengumuman</label>
+                        <input type="text" name="waktu1" placeholder="Waktu Pengumuman Produk *">
+                        <label for="waktu2">Waktu Rilis</label>
+                        <input type="text" name="waktu2" placeholder="Waktu Rilis Produk *">
+                        <label for="gambar">Gambar Produk</label>
+                        <input type="file" name="gambar"/>
+    
+                        <div class="underlined-title">
+                            <div class="editContent">
+                                <h1 class="text-center latestitems">Spesifikasi</h1>
+                            </div>
+                            <div class="wow-hr type_short">
+                                <span class="wow-hr-h">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <label for="os">Sistem Operasi</label>
+                        <input type="text" name="os" placeholder="Sistem Operasi Produk *">
+                        <label for="prosesor">Prosesor</label>
+                        <input type="text" name="prosesor" placeholder="Tipe SOC, GPU, Besar Transistor *">
+                        <label for="memori">Memori</label>
+                        <input type="text" name="memori" placeholder="RAM/Internal *">
+                        <label for="kamera">Kamera Utama</label>
+                        <input type="text" name="kamera" placeholder="Resolusi, Ukuran Sensor, Ukuran Piksel, Jarak Fokal, Autofocus *">
+                        <label for="layar">Layar</label>
+                        <input type="text" name="layar" placeholder="Ukuran, Refresh Rate, Tipe Panel, Resolusi, Keterangan Layar *">
+                        <label for="baterai">Baterai</label>
+                        <input type="text" name="baterai" placeholder="Kapasitas, Daya Pengisian *">
+                        <label for="warna">Warna</label>
+                        <input type="text" name="warna" placeholder="Warna Produk *">
+    
+                        <div class="underlined-title">
+                            <div class="editContent">
+                                <h1 class="text-center latestitems">Score</h1>
+                            </div>
+                            <div class="wow-hr type_short">
+                                <span class="wow-hr-h">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <label for="geekbench1">GeekBench 5 (Single-core)</label>
+                        <input type="text" name="geekbench1" placeholder="0-2000 *">
+                        <label for="geekbench2">GeekBench 5 (Multi-core)</label>
+                        <input type="text" name="geekbench2" placeholder="0-5000 *">
+                        <label for="dxomark">DxOMark (Kamera)</label>
+                        <input type="text" name="dxomark" placeholder="0-200 *">
+                        <label for="displaymate">DisplayMate (Layar)</label>
+                        <input type="text" name="displaymate" placeholder="Nilai Huruf (Contoh : A+, B) *">
+                        <label for="ber">Battery Endurance Rating (Baterai)</label>
+                        <input type="text" name="ber" placeholder="0-200h *">
+
+                        <input type="submit" id="submit" class="clearfix btn" value="Send">
+                        <a class="btn btn-outline-dark cancel" href="/settings">Cancel</a>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+</div>
+</section>
+
+<%- include('../partials/footer'); %>

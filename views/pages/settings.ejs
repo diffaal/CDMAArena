@@ -1,0 +1,40 @@
+<%- include('../partials/header'); %>
+
+<section class="item content">
+    <div class="container toparea">
+        <div class="underlined-title">
+            <div class="editContent">
+                <h1 class="text-center latestitems">SMARTPHONES DATA SETTINGS</h1>
+            </div>
+            <div class="wow-hr type_short">
+                <span class="wow-hr-h">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                </span>
+            </div>
+        </div>
+    
+    <div class="table-responsive-sm">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Tipe</th>
+                    <th> <a class="btn btn-sm btn-success" href="/create">Add</a></th>
+                </tr>
+            </thead>
+            <tbody>
+            <% model.forEach(function(smartphone) { %>
+                <tr>
+                    <td><%= smartphone.tipe %></td>
+                    <td> <a class="btn btn-sm btn-warning" href="/edit/<%= smartphone.id_produk %>">Edit</a>
+                         <a class="btn btn-sm btn-danger" href="/delete/<%= smartphone.id_produk %>">Delete</a>
+                    </td>
+                </tr>
+            <% }); %>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<%- include('../partials/footer'); %>

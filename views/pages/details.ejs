@@ -1,0 +1,64 @@
+<%- include('../partials/header'); %>
+
+<!-- CONTENT =============================-->
+<section class="item content">
+    <div class="container toparea">
+        <div class="underlined-title">
+            <div class="editContent">
+                <h1 class="text-center latestitems"><%= model.tipe %></h1>
+            </div>
+            <div class="wow-hr type_short">
+                <span class="wow-hr-h">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                </span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="productbox">
+                    <img src="/images/<%= model.gambar %>" alt="">
+                    <div class="clearfix">
+                    </div>
+                    <br/>
+                    <div class="product-details text-left">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <p class="sub-inf">Detail Produk & Spesifikasi</p>
+                <div class="properties-box">
+                    <ul class="unstyle">
+                        <li><b class="propertyname">Model Number:</b> <%= model.id_produk %></li>
+                        <li><b class="propertyname">Merk:</b> <%= model.merk %></li>
+                        <li><b class="propertyname">Waktu Pengumuman:</b> <%= model.waktu_pengumuman %></li>
+                        <li><b class="propertyname">Waktu Rilis:</b> <%= model.waktu_rilis %></li>
+                        <li><b class="propertyname">Sistem Operasi:</b> <%= model.sistem_operasi %></li>
+                        <li><b class="propertyname">Prosesor:</b> <%= model.prosesor %></li>
+                        <li><b class="propertyname">Memori:</b> <%= model.memori %></li>
+                        <li><b class="propertyname">Kamera Utama:</b> <%= model.kamera_utama %></li>
+                        <li><b class="propertyname">Layar:</b> <%= model.layar %></li>
+                        <li><b class="propertyname">Baterai:</b> <%= model.baterai %></li>
+                        <li><b class="propertyname">Warna:</b> <%= model.warna %></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="col-md-4">
+                <p class="sub-inf">Score</p>
+                <div class="properties-box">
+                    <ul class="unstyle">
+                        <li><b class="propertyname">GeekBench 5 (Single-core):</b> <%= model.geekbench5_single %></li>
+                        <li><b class="propertyname">GeekBench 5 (Multi-core):</b> <%= model.geekbench5_multi %></li>
+                        <li><b class="propertyname">DxOMark (Kamera):</b> <%= model.dxomark %></li>
+                        <li><b class="propertyname">DisplayMate (Layar):</b> <%= model.displaymate %></li>
+                        <li><b class="propertyname">Battery Endurance Rating:</b> <%= model.battery_endurance_rating %></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+ <%- include('../partials/footer'); %>

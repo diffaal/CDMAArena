@@ -1,0 +1,38 @@
+<%- include('../partials/header'); %>
+
+<section class="item content">
+    <div class="container toparea">
+        
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <div class="done">
+                    <div class="alert alert-success">
+                        <button type="button" class="close" data-dismiss="alert">×</button>
+                        Your message has been sent. Thank you!
+                    </div>
+                </div>
+                <form method="post" action="/delete/<%= model.id_produk %>" id="contactform">
+                    <div class="form">
+                        <div class="underlined-title">
+                            <div class="editContent">
+                                <h1 class="text-center latestitems">Delete <%= model.tipe %>?</h1>
+                            </div>
+                            <div class="wow-hr type_short">
+                                <span class="wow-hr-h">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <input type="submit" id="submit" class="clearfix btn" value="Delete">
+                        <a class="btn btn-outline-dark cancel" href="/settings">Cancel</a>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+</div>
+</section>
+
+<%- include('../partials/footer'); %>
